@@ -219,6 +219,8 @@ project_add(Ls) ->
     case lists:keyfind(<<"project">>, 1, Ls) of
     false ->
         {error, "project argument not supplied"};
+    {_, <<"">>} ->
+        {error, "project argument is emtpy"};
     {_, P} ->
         F = fun() ->
                 case mnesia:read(project, P) of

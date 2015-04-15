@@ -90,7 +90,7 @@ URI: `/task`
 
 ##### Response
 ```json
-{"code":0, "tasks":[{"tid":"tid1", "status":0}, {"tid":"tid2", "status":3}]
+{"code":0, "tasks":[{"tid":"tid1", "status":0}, {"tid":"tid2", "status":3}]}
 ```
 When `status` was 0, all the workers completed the task.
 
